@@ -1,10 +1,9 @@
 # Use an official Maven image as a parent image
 FROM openjdk:23-jdk-slim
 
-WORKDIR /app
-
-COPY target/initiate-payment-0.0.1-SNAPSHOT.jar app.jar
+# Copy everything...
+COPY . ./
 
 EXPOSE 8080
 
-CMD ["java", "-jar", "app.jar"]
+ENTRYPOINT ["java", "-jar", "/initiate-payment/target/initiate-payment-1.0-SNAPSHOT.jar"]
