@@ -6,4 +6,4 @@ COPY . ./
 
 EXPOSE 8080
 
-ENTRYPOINT ["java", "-jar", "/initiate-payment/target/initiate-payment-1.0-SNAPSHOT.jar"]
+ENTRYPOINT ["java", "-jar", "/initiate-payment/target/initiate-payment-0.0.1-SNAPSHOT.jar"]
