@@ -1,10 +1,10 @@
-package com.nd2k.fast_payment_system;
+package com.nd2k.initiate_payment;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class FastPaymentSystemApplicationTests {
+class InitiatePaymentApplicationTests {
 
 	@Test
 	void contextLoads() {

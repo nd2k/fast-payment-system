@@ -1,13 +1,13 @@
-package com.nd2k.fast_payment_system;
+package com.nd2k.initiate_payment;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class FastPaymentSystemApplication {
+public class InitiatePaymentApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(FastPaymentSystemApplication.class, args);
+		SpringApplication.run(InitiatePaymentApplication.class, args);
 	}
 
 }
