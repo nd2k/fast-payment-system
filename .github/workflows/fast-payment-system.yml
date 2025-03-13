@@ -41,7 +41,7 @@ jobs:
         uses: mr-smithers-excellent/docker-build-push-action@v5
         with:
           image: nd2k/initiate-payment
-          tag: latest
+          tags: latest
           registry: docker.io
           dockerfile: initiate-payment/Dockerfile
           username: ${{ secrets.DOCKER_USERNAME }}
