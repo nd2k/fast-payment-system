@@ -1,5 +1,7 @@
-package com.nd2k.initiate_payment;
+package com.nd2k.initiate_payment.controller;
 
+import com.nd2k.initiate_payment.service.ProcessPaymentService;
+import com.nd2k.library.model.common.InitiatePaymentResponse;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.http.HttpStatus;
@@ -15,14 +17,19 @@ import org.springframework.web.bind.annotation.RestController;
 @SuppressWarnings("unused")
 public class InitiatePaymentController {
 
+    private final ProcessPaymentService processPaymentService;
     private static final Logger logger = LoggerFactory.getLogger(InitiatePaymentController.class);
+
+    public InitiatePaymentController(ProcessPaymentService processPaymentService) {
+        this.processPaymentService = processPaymentService;
+    }
 
     @RequestMapping(value = "/initiate-payment", method = RequestMethod.POST)
     @ResponseBody
-    public ResponseEntity<String> initiatePayment(@RequestBody String paymentRequest) {
+    public ResponseEntity<InitiatePaymentResponse> initiatePayment(@RequestBody String paymentRequest) {
         logger.info("Payment request: {}", paymentRequest);
         return new ResponseEntity<>(
-                "Payment initiated successfully",
+                processPaymentService.initiatePayment(paymentRequest),
                 HttpStatus.CREATED);
     }
 }

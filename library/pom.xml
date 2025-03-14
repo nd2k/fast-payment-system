@@ -7,33 +7,23 @@
 		<artifactId>fast-payment-system</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
-	<groupId>com.nd2k.initiate-payment</groupId>
-	<artifactId>initiate-payment</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
-	<name>initiate-payment</name>
-	<description>Initiate Payment API</description>
+	<groupId>com.nd2k.library</groupId>
+	<artifactId>library</artifactId>
+	<version>0.1-SNAPSHOT</version>
+	<name>library</name>
+	<description>Common library</description>
 	<properties>
 		<java.version>23</java.version>
 	</properties>
 	<dependencies>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-web</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-test</artifactId>
-			<scope>test</scope>
-		</dependency>
 		<dependency>
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
 			<optional>true</optional>
 		</dependency>
 		<dependency>
-			<groupId>com.nd2k.library</groupId>
-			<artifactId>library</artifactId>
-			<version>0.1-SNAPSHOT</version>
+			<groupId>javax.xml.bind</groupId>
+			<artifactId>jaxb-api</artifactId>
 		</dependency>
 	</dependencies>
 
