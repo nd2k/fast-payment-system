@@ -30,12 +30,6 @@ jobs:
       - name: Build fast-payment-system project
         run: mvn -f pom.xml clean package
 
-      - name: Build library module
-        run: mvn -f library/pom.xml clean package
-
-      - name: Build initiate-payment module
-        run: mvn -f initiate-payment/pom.xml clean package
-
       - name: Login to Docker
         uses: docker/login-action@v2
         with:
