@@ -10,9 +10,10 @@ import javax.xml.bind.annotation.XmlType;
 @NoArgsConstructor
 @XmlType(name = "ExchangeRateType1Code")
 @XmlEnum
+//nouse//
 public enum ExchangeRateType1Code {
 
     SPOT,
     SALE,
-    AGRD;
+    AGRD
 }
