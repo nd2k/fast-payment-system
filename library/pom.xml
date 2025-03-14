@@ -3,11 +3,10 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
-		<groupId>com.nd2k</groupId>
+		<groupId>com.nd2k.fps</groupId>
 		<artifactId>fast-payment-system</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
-	<groupId>com.nd2k.library</groupId>
 	<artifactId>library</artifactId>
 	<version>0.1-SNAPSHOT</version>
 	<name>library</name>
