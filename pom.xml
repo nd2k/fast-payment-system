@@ -2,8 +2,8 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>com.nd2k.fast-payment-system</groupId>
-	<artifactId>root</artifactId>
+	<groupId>com.nd2k</groupId>
+	<artifactId>fast-payment-system</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>root</name>
 	<description>Fast Payment System Project</description>
@@ -52,7 +52,7 @@
 				<version>${jaxb.api.version}</version>
 			</dependency>
 			<dependency>
-				<groupId>com.nd2k.fast-payment-system</groupId>
+				<groupId>com.nd2k</groupId>
 				<artifactId>library</artifactId>
 				<version>${library.version}</version>
 			</dependency>
