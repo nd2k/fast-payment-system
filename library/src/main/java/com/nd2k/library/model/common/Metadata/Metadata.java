@@ -1,4 +1,4 @@
-package org.nd2k.psp.model.common.Metadata;
+package com.nd2k.library.model.common.Metadata;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
