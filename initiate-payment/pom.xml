@@ -33,7 +33,6 @@
 		<dependency>
 			<groupId>com.nd2k.library</groupId>
 			<artifactId>library</artifactId>
-			<version>0.1-SNAPSHOT</version>
 		</dependency>
 	</dependencies>
 

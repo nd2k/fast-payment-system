@@ -21,6 +21,7 @@
 		<lombok.version>1.18.36</lombok.version>
 		<jaxb.api.version>2.4.0-b180830.0359</jaxb.api.version>
 		<maven.compiler.plugin.version>3.14.0</maven.compiler.plugin.version>
+		<library.version>0.1-SNAPSHOT</library.version>
 	</properties>
 	<dependencyManagement>
 		<dependencies>
@@ -49,6 +50,11 @@
 				<groupId>javax.xml.bind</groupId>
 				<artifactId>jaxb-api</artifactId>
 				<version>${jaxb.api.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.nd2k.library</groupId>
+				<artifactId>library</artifactId>
+				<version>${library.version}</version>
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
